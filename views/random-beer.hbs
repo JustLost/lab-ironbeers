@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    {{#each responseFromApi}}
+    <img class="card-img-top" src="{{this.image_url}}" alt="{{this.name}}">
+    
+    <h1 class="card-title">{{this.name}}</h1>
+    <p class="card-text">{{this.description}}</p>
+    <p class="card-text">{{this.tagline}}</p>
+    <p class="card-text">{{this.food_pairing}}</p>
+    <p class="card-text">{{this.brewers_tips}}</p>
+        
+    {{/each}}
+</div>
